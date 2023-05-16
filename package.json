@@ -19,9 +19,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "start": "SET PORT=4000 && node server.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "SET PORT=4000 && node server.js",
     "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
