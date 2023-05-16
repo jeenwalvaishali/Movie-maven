@@ -1,0 +1,324 @@
+.main {
+  color: #333333;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  background-image: url("../images/login-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.login-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: inherit;
+  background-size: inherit;
+  background-repeat: inherit;
+  background-attachment: inherit;
+  filter: blur(0.5rem);
+  z-index: 1;
+}
+
+.login-card {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  flex-flow: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  box-shadow: 0 0 1.25rem 0.37rem #078f4040;
+  position: relative;
+  z-index: 1;
+}
+
+.login-card-right {
+  width: 100%;
+  padding: 1.8rem;
+  overflow: hidden;
+  background-color: #010606f7;
+}
+
+.login-card-left {
+  color: #ffffff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../images/login-image.jpg");
+  overflow: hidden;
+}
+
+.left-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.8rem;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+.left-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.485) 0%, transparent 100%);
+}
+
+.left-overlay-head {
+  font-size: 4rem;
+  line-height: 1;
+  font-weight: 600;
+  margin-left: 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+  color: #fff;
+}
+
+.left-overlay-para {
+  margin-left: 2rem;
+  font-weight: normal;
+  color: #fff;
+}
+
+.right-overlay-head {
+  text-align: center;
+  color: #b0b3b9;
+  font-size: 1rem;
+  line-height: 0;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.login-form {
+  margin-bottom: 1rem;
+}
+
+.login-form-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.form-submit-para {
+  font-size: 0.8rem;
+  color: #b0b3b9;
+}
+
+.login-form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.form-label {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0;
+  font-size: inherit;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.error-message {
+  margin-top: 1rem;
+  margin-bottom: 10rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: red;
+}
+
+.mandotary-field {
+  color: red;
+  padding-right: 0.3rem;
+}
+
+.form-control {
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  height: 2.5rem;
+  line-height: 1.5;
+  color: #000;
+  background-color: #fff;
+  border: 0.05rem solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.button-login {
+  display: block;
+  text-align: center;
+  background: #078f40;
+  margin-top: 1rem;
+  color: #fff;
+  padding: 1rem;
+  width: 100%;
+  font-size: 1em;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  box-shadow: 0 0.06rem 0.9rem 0 rgba(111, 177, 73, 0.7);
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .login-card {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    flex-flow: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    box-shadow: 0 0 1.25rem 0.37rem #078f4040;
+    position: relative;
+    z-index: 1;
+  }
+
+  .login-card-right {
+    width: 100%;
+    padding: 1rem;
+    overflow: hidden;
+    background-color: #010606f7;
+  }
+
+  .left-overlay-head {
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 600;
+    margin-left: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+    color: #fff;
+  }
+
+  .left-overlay-para {
+    margin-left: 2rem;
+    font-weight: normal;
+    color: #fff;
+  }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .login-card {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+    background: #ffffff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex: 1 1 100%;
+    align-items: stretch;
+    justify-content: space-between;
+    box-shadow: 0 0 1.25rem 0.37rem #078f4040;
+    position: relative;
+    z-index: 1;
+  }
+
+  .login-card-right {
+    width: 100%;
+    padding: 2rem;
+    overflow: hidden;
+    background-color: #010606f7;
+  }
+
+  .left-overlay-head {
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 600;
+    margin-left: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+    color: #fff;
+  }
+
+  .left-overlay-para {
+    margin-left: 2rem;
+    font-weight: normal;
+    color: #fff;
+  }
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+  .login-card {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+    background: #ffffff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex: 1 1 100%;
+    align-items: stretch;
+    justify-content: space-between;
+    box-shadow: 0 0 1.25rem 0.37rem #078f4040;
+    position: relative;
+    z-index: 1;
+  }
+
+  .login-card-right {
+    width: 60%;
+    padding: 2.5rem;
+    overflow: hidden;
+    background-color: #010606f7;
+  }
+
+  .left-overlay-head {
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 600;
+    margin-left: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+    color: #fff;
+  }
+
+  .left-overlay-para {
+    margin-left: 2rem;
+    font-weight: normal;
+    color: #fff;
+  }
+}

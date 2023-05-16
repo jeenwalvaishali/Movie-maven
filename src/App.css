@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@400;700&family=Montserrat:wght@500&family=PT+Serif&family=Roboto+Flex&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap");
+
+.app {
+  margin: 0;
+  font-family: "EB Garamond", serif;
+}
+
+:root {
+  --primary-color: #f7cf2a;
+  --primary-color-less: #f7ce2a3d;
+  --primary-color-light: #f3d958;
+  --btn-primary-color: #c03f57;
+  --bck-color: #27292b;
+  --secondary-color: #4caf50;
+  --bck-primary: #010606;
+  --card-primary: #19171d;
+  --purple: hsl(240, 80%, 89%);
+  --pink: hsl(0, 59%, 94%);
+  --light-bg: hsl(204, 37%, 92%);
+  --light-gray-bg: hsl(0, 0%, 94%);
+  --white: hsl(0, 0%, 100%);
+  --dark: hsl(0, 0%, 7%);
+  --text-gray: hsl(0, 0%, 30%);
+}
