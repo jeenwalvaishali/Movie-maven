@@ -38,16 +38,6 @@ const Footer = ({ setPage }) => {
                   .
                 </p>
               </li>
-
-              <li>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://fontawesome.com/license"
-                >
-                  Font Awesome Icons
-                </a>
-              </li>
             </ul>
           </li>
           <li>
