@@ -33,4 +33,54 @@ MovieMaven aims to provide a user-friendly and intuitive interface, allowing use
 - MovieMaven uses the TMDb API to fetch movie data. Please refer to the TMDb API documentation for its licensing terms and conditions.
 - [TMDb](https://www.themoviedb.org/)
 
+# Structural Requirements
+
+### Project Setup
+- The project is an individual effort without group involvement.
+- The project directory must run with `npm install`, `npm run build`, and `npm start`.
+- The project should not use `react-scripts/create-react-app` to run with `npm start`.
+- The `npm start` command should initiate a single `server.js` to run both the static SPA and REST services.
+
+### Front End
+- The project uses a React-based front end as a Single Page Application (SPA).
+- The project uses `npm` and does not include inappropriate files or libraries.
+
+### Services
+- The backend code utilizes express-based NodeJS.
+- REST-based service calls are implemented, involving different HTTP methods in a RESTful way.
+
+## Functionality and Creativity
+- The project is both useful and interesting.
+- The user interface is usable and attractive.
+- Input validation is implemented on both the front end and back end.
+- Helpful error reporting is incorporated for user feedback.
+
+## Security Requirements
+- Users undergo an authentication step, with some cases where authentication is denied.
+- The server responds with a token/session id for client authentication/authorization.
+- All service calls have some form of authorization.
+- Security best practices are followed, including input sanitization on the server side.
+- HTTPS is not required.
+
+## Technologies Used
+- React
+- create-react-app
+- Babel
+- Webpack
+- UUID
+- Authentication and Authorization
+- Fetch API
+- JavaScript (ES6+)
+- Session ID
+- Cookies
+
+## Getting Started
+1. Install dependencies: `npm install`
+2. Build the project: `npm run build`
+3. Start the server: `npm start`
+
+## Contributors
+- Vaishali Jeenwal
+
+
 
