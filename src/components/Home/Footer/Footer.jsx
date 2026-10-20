@@ -23,7 +23,7 @@ const Footer = ({ setPage }) => {
             <h2 className="footer-head">Information</h2>
             <ul className="footer-column">
               <li>
-                <p>
+                <p className="footer-description">
                   Movie Maven is a movie discovery and review platform that
                   allows users to explore movies, discover movie details, search
                   for reviews, and share their opinions. Movie information and
@@ -38,6 +38,7 @@ const Footer = ({ setPage }) => {
                   .
                 </p>
               </li>
+
               <li>
                 <a
                   target="_blank"
