@@ -2,6 +2,10 @@
 
 MovieMaven is a website designed for movie enthusiasts, providing comprehensive information about movies and a platform to share thoughts and reviews with other users. With a vast database of movies, including popular ones, MovieMaven is your go-to destination for discovering and learning about films.
 
+## Live Demo
+
+[Visit MovieMaven](https://movie-maven-eztc.onrender.com/)
+
 ## How to Use
 
 1. **Login:** Users can sign up using their username on the login page, which is the entry point of the website.
@@ -81,6 +85,5 @@ MovieMaven aims to provide a user-friendly and intuitive interface, allowing use
 
 ## Contributors
 - Vaishali Jeenwal
-
 
 
